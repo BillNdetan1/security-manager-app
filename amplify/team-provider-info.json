@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-securitymanagerapp-dev-5ca4a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::339712831780:role/amplify-securitymanagerapp-dev-5ca4a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::339712831780:role/amplify-securitymanagerapp-dev-5ca4a-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-securitymanagerapp-dev-5ca4a-deployment",
+      "UnauthRoleName": "amplify-securitymanagerapp-dev-5ca4a-unauthRole",
+      "StackName": "amplify-securitymanagerapp-dev-5ca4a",
+      "StackId": "arn:aws:cloudformation:us-east-1:339712831780:stack/amplify-securitymanagerapp-dev-5ca4a/28850fe0-27a9-11ef-bdff-12b52b6af81f",
+      "AmplifyAppId": "d2ubqh9odxqrqd"
+    },
+    "categories": {
+      "auth": {
+        "securitymanagerapp9d1b8d61": {}
+      }
+    }
+  }
+}
