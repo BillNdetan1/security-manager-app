@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "securitymanagerapp9d1b8d61": {}
+        "securitymanagerapp9d1b8d61": {},
+        "securitymanagerapp": {}
       }
     }
   }

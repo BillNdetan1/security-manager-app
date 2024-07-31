@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Auth,API,Storage,Amplify} from 'aws-amplify';
 import config from './aws-exports';
+import '@aws-amplify/ui-react/styles.css'
+import {AmplifyProvider} from '@aws-amplify/ui-react';
+
 Amplify.configure(config);
 
 ReactDOM.render(

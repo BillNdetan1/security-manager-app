@@ -3,25 +3,57 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import Home from './pages/Home';
 import About from './pages/About';
 import PremiumPage from './pages/PremiumPage';
+import {
+  NavBarHeader2 
+ } from './ui-components';
+ import {
+  HeroLayout1 
+ } from './ui-components';
+ import {
+  MarketingPricing 
+ } from './ui-components';
+ import {
+  Features2x2 
+ } from './ui-components';
+ import {
+  CTASection 
+ } from './ui-components';
 
-function App() {
+
+ function App() {
   return (
-    <div className="App">
-      <Router>
-        <div className='content'>
-          <NavLink className='content' exact activeClassName="active" to="/">Home</NavLink>
-          <NavLink className='content' activeClassName="active" to="/about">About</NavLink>
-          <NavLink className='content' activeClassName="active" to="/premium">Sign-Up/Sign-In</NavLink>
-    </div>
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/about" element={<About />}></Route>
+    
+   
+      <div className="container">
+        <div className="component">
+        <Router>
+          <NavBarHeader2 />
+          <Routes>
       <Route path="/premium" element={<PremiumPage/>}></Route>
     </Routes>
-      </Router>
+          </Router>
+        </div>
+        <div className="component">
+          <HeroLayout1 />
+        </div>
+        <div className="component">
+          <MarketingPricing />
+        </div>
+        <div className="component">
+          <Features2x2  />
+        </div>
+        <div className="component">
+          < CTASection />
+        </div>
       </div>
-  );
-}
+    );
+  }
+
+
 
 
 export default App;
+
+
+
+
