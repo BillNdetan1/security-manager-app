@@ -10,6 +10,22 @@ import { getOverrideProps, useNavigateAction } from "./utils";
 import { Button, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function NavBarHeader2(props) {
   const { overrides, ...rest } = props;
+  const homeOnClick = useNavigateAction({
+    anchor: "componentHome",
+    type: "anchor",
+  });
+  const aboutOnClick = useNavigateAction({
+    anchor: "componentFeatures",
+    type: "anchor",
+  });
+  const pricingOnClick = useNavigateAction({
+    anchor: "componentPrice",
+    type: "anchor",
+  });
+  const contactOnClick = useNavigateAction({
+    anchor: "componentFooter",
+    type: "anchor",
+  });
   const buttonThreeNineFourNineThreeFourSixSixOnClick = useNavigateAction({
     type: "url",
     url: "/premium",
@@ -140,6 +156,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Home"
+          onClick={() => {
+            homeOnClick();
+          }}
           {...getOverrideProps(overrides, "Home")}
         ></Text>
         <Text
@@ -161,6 +180,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="About"
+          onClick={() => {
+            aboutOnClick();
+          }}
           {...getOverrideProps(overrides, "About")}
         ></Text>
         <Text
@@ -182,6 +204,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Pricing"
+          onClick={() => {
+            pricingOnClick();
+          }}
           {...getOverrideProps(overrides, "Pricing")}
         ></Text>
         <Text
@@ -203,6 +228,9 @@ export default function NavBarHeader2(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Contact"
+          onClick={() => {
+            contactOnClick();
+          }}
           {...getOverrideProps(overrides, "Contact")}
         ></Text>
       </Flex>

@@ -1,7 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import PremiumPage from './pages/PremiumPage';
 import {
   NavBarHeader2 
@@ -34,16 +32,23 @@ import {
           </Router>
         </div>
         <div className="component">
+          <div id="componentHome"></div>
           <HeroLayout1 />
         </div>
+       
         <div className="component">
+          <div id="componentPrice"></div>
           <MarketingPricing />
         </div>
+        
         <div className="component">
+          <div id="componentFeatures"></div>
           <Features2x2  />
         </div>
+       
         <div className="component">
-          < CTASection />
+         <div id="componentFooter"></div>
+         < CTASection />
         </div>
       </div>
     );
