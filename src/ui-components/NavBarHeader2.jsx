@@ -10,23 +10,24 @@ import { getOverrideProps, useNavigateAction } from "./utils";
 import { Button, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function NavBarHeader2(props) {
   const { overrides, ...rest } = props;
-  const homeOnClick = useNavigateAction({
-    anchor: "componentHome",
+  const buttonThreeEightEightNineEightNineZeroOnClick = useNavigateAction({
+    anchor: "Home",
     type: "anchor",
   });
-  const aboutOnClick = useNavigateAction({
-    anchor: "componentFeatures",
+  const buttonThreeEightEightNineOneZeroThreeSixOnClick = useNavigateAction({
+    anchor: "Features",
     type: "anchor",
   });
-  const pricingOnClick = useNavigateAction({
-    anchor: "componentPrice",
+  const buttonThreeEightEightNineOneZeroEightTwoOnClick = useNavigateAction({
+    anchor: "Price",
     type: "anchor",
   });
-  const contactOnClick = useNavigateAction({
-    anchor: "componentFooter",
+  const buttonThreeEightEightNineOneOneFourZeroOnClick = useNavigateAction({
+    anchor: "Contacts",
     type: "anchor",
   });
   const buttonThreeNineFourNineThreeFourSixSixOnClick = useNavigateAction({
+    target: "_blank",
     type: "url",
     url: "/premium",
   });
@@ -137,102 +138,66 @@ export default function NavBarHeader2(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 5")}
       >
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(255,255,255,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
+        <Button
           width="unset"
           height="unset"
-          gap="unset"
-          alignItems="unset"
+          border="1px SOLID rgba(255,255,255,1)"
           shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
+          size="default"
+          isDisabled={false}
+          variation="default"
+          color="white"
           children="Home"
           onClick={() => {
-            homeOnClick();
+            buttonThreeEightEightNineEightNineZeroOnClick();
           }}
-          {...getOverrideProps(overrides, "Home")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(255,255,255,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
+          {...getOverrideProps(overrides, "Button3889890")}
+        ></Button>
+        <Button
           width="unset"
           height="unset"
-          gap="unset"
-          alignItems="unset"
+          border="1px SOLID rgba(255,255,255,1)"
           shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="About"
+          size="default"
+          isDisabled={false}
+          variation="default"
+          color="white"
+          children="Features"
           onClick={() => {
-            aboutOnClick();
+            buttonThreeEightEightNineOneZeroThreeSixOnClick();
           }}
-          {...getOverrideProps(overrides, "About")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(255,255,255,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
+          {...getOverrideProps(overrides, "Button38891036")}
+        ></Button>
+        <Button
           width="unset"
           height="unset"
-          gap="unset"
-          alignItems="unset"
+          border="1px SOLID rgba(255,255,255,1)"
           shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
+          size="default"
+          isDisabled={false}
+          variation="default"
+          color="white"
           children="Pricing"
           onClick={() => {
-            pricingOnClick();
+            buttonThreeEightEightNineOneZeroEightTwoOnClick();
           }}
-          {...getOverrideProps(overrides, "Pricing")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(255,255,255,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
+          {...getOverrideProps(overrides, "Button38891082")}
+        ></Button>
+        <Button
           width="unset"
           height="unset"
-          gap="unset"
-          alignItems="unset"
+          border="1px SOLID rgba(255,255,255,1)"
           shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
+          size="default"
+          isDisabled={false}
+          variation="default"
+          color="white"
           children="Contact"
           onClick={() => {
-            contactOnClick();
+            buttonThreeEightEightNineOneOneFourZeroOnClick();
           }}
-          {...getOverrideProps(overrides, "Contact")}
-        ></Text>
+          {...getOverrideProps(overrides, "Button38891140")}
+        ></Button>
       </Flex>
       <Flex
         gap="8px"
@@ -243,17 +208,21 @@ export default function NavBarHeader2(props) {
         alignItems="flex-start"
         shrink="0"
         position="relative"
+        border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "actions")}
       >
         <Button
           width="unset"
           height="unset"
+          border="1px SOLID rgba(255,255,255,1)"
+          padding="7px 15px 7px 15px"
           shrink="0"
-          backgroundColor="rgba(29,202,14,1)"
+          backgroundColor="rgba(0,0,0,1)"
           size="default"
           isDisabled={false}
           variation="link"
+          color="white"
           children="Log in"
           onClick={() => {
             buttonThreeNineFourNineThreeFourSixSixOnClick();
@@ -263,8 +232,9 @@ export default function NavBarHeader2(props) {
         <Button
           width="unset"
           height="unset"
+          border="1px SOLID rgba(255,255,255,1)"
           shrink="0"
-          backgroundColor="rgba(191,64,64,1)"
+          backgroundColor="rgba(0,136,235,1)"
           size="default"
           isDisabled={false}
           variation="primary"

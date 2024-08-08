@@ -24,10 +24,10 @@ export declare type NavBarHeader2OverridesProps = {
     "Vector 1"?: PrimitiveOverrideProps<IconProps>;
     "Vector 2"?: PrimitiveOverrideProps<IconProps>;
     "Frame 5"?: PrimitiveOverrideProps<FlexProps>;
-    Home?: PrimitiveOverrideProps<TextProps>;
-    About?: PrimitiveOverrideProps<TextProps>;
-    Pricing?: PrimitiveOverrideProps<TextProps>;
-    Contact?: PrimitiveOverrideProps<TextProps>;
+    Button3889890?: PrimitiveOverrideProps<ButtonProps>;
+    Button38891036?: PrimitiveOverrideProps<ButtonProps>;
+    Button38891082?: PrimitiveOverrideProps<ButtonProps>;
+    Button38891140?: PrimitiveOverrideProps<ButtonProps>;
     actions?: PrimitiveOverrideProps<FlexProps>;
     Button39493466?: PrimitiveOverrideProps<ButtonProps>;
     Button39493467?: PrimitiveOverrideProps<ButtonProps>;

@@ -1856,7 +1856,7 @@ export default createTheme({
         },
       },
       text: {
-        color: { value: "{colors.font.primary.value}" },
+        color: { value: "hsl(0, 0%, 100%)" },
         primary: { color: { value: "{colors.font.primary.value}" } },
         secondary: { color: { value: "{colors.font.secondary.value}" } },
         tertiary: { color: { value: "{colors.font.tertiary.value}" } },
