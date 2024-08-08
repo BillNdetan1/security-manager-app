@@ -27,7 +27,6 @@ export default function NavBarHeader2(props) {
     type: "anchor",
   });
   const buttonThreeNineFourNineThreeFourSixSixOnClick = useNavigateAction({
-    target: "_blank",
     type: "url",
     url: "/premium",
   });

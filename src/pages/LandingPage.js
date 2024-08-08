@@ -1,5 +1,6 @@
-
-
+import {
+  NavBarHeader2 
+ } from '../ui-components';
  import {
   HeroLayout1 
  } from '../ui-components';
@@ -16,6 +17,10 @@
 const LandingPage = () => {
     return(
       <div className="container">
+      
+      <div className="component">
+        <NavBarHeader2 />
+      </div>
       
       <div className="component">
         <div id="Home"></div>
