@@ -26,7 +26,7 @@ export declare type Features2x2OverridesProps = {
     "Frame 43039424113"?: PrimitiveOverrideProps<FlexProps>;
     MyIcon39424114?: MyIconProps;
     "Threat Detection"?: PrimitiveOverrideProps<TextProps>;
-    "Our threat detection features allows business owners to feel at ease knowing that the networks are secure from common threats."?: PrimitiveOverrideProps<TextProps>;
+    "Our threat detection features allows business owners to feel at ease, knowing that their networks are secure from common threats."?: PrimitiveOverrideProps<TextProps>;
     "Frame 37329766597"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 43039424116"?: PrimitiveOverrideProps<FlexProps>;
     MyIcon39424117?: MyIconProps;
@@ -37,12 +37,12 @@ export declare type Features2x2OverridesProps = {
     "Frame 43039403233"?: PrimitiveOverrideProps<FlexProps>;
     MyIcon39403234?: MyIconProps;
     "Global Risk Registers"?: PrimitiveOverrideProps<TextProps>;
-    "Creation of customizable risk registers to store and score past risks. Makes resolving reoccurring incidents seamless."?: PrimitiveOverrideProps<TextProps>;
+    "Customizable risk registers to store and score risks. Makes resolving reoccurring incidents seamless."?: PrimitiveOverrideProps<TextProps>;
     "Frame 37329766604"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 43039424110"?: PrimitiveOverrideProps<FlexProps>;
     MyIcon39424111?: MyIconProps;
     "Training Modules"?: PrimitiveOverrideProps<TextProps>;
-    "Access to state of the art training on best practices to keep your network secured and available."?: PrimitiveOverrideProps<TextProps>;
+    "Access to state of the art training on best practices to keep your network secured, and available."?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type Features2x2Props = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: Features2x2OverridesProps | undefined | null;

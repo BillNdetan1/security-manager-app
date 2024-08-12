@@ -30,6 +30,10 @@ export default function NavBarHeader2(props) {
     type: "url",
     url: "/premium",
   });
+  const buttonThreeNineFourNineThreeFourSixSevenOnClick = useNavigateAction({
+    type: "url",
+    url: "/premium",
+  });
   return (
     <Flex
       gap="10px"
@@ -238,6 +242,9 @@ export default function NavBarHeader2(props) {
           isDisabled={false}
           variation="primary"
           children="Sign up"
+          onClick={() => {
+            buttonThreeNineFourNineThreeFourSixSevenOnClick();
+          }}
           {...getOverrideProps(overrides, "Button39493467")}
         ></Button>
       </Flex>

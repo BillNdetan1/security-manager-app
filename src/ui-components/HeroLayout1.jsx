@@ -11,7 +11,7 @@ import {
   getOverridesFromVariants,
   mergeVariantsAndOverrides,
 } from "./utils";
-import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function HeroLayout1(props) {
   const { overrides: overridesProp, ...rest } = props;
   const variants = [
@@ -21,11 +21,8 @@ export default function HeroLayout1(props) {
         Heading: {},
         Body: {},
         Message: {},
-        Button: {},
         HeroMessage: {},
         Left: {},
-        image: {},
-        Right: {},
         HeroLayout1: {},
       },
       variantValues: { mode: "Light" },
@@ -161,52 +158,7 @@ export default function HeroLayout1(props) {
               {...getOverrideProps(overrides, "Body")}
             ></Text>
           </Flex>
-          <Button
-            width="unset"
-            height="unset"
-            border="1px SOLID rgba(0,0,0,1)"
-            shrink="0"
-            backgroundColor="rgba(29,202,14,1)"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Learn More"
-            {...getOverrideProps(overrides, "Button")}
-          ></Button>
         </Flex>
-      </Flex>
-      <Flex
-        gap="10px"
-        direction="column"
-        width="720px"
-        height="unset"
-        justifyContent="center"
-        alignItems="center"
-        overflow="hidden"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        display="flex"
-        {...getOverrideProps(overrides, "Right")}
-      >
-        <Image
-          width="720px"
-          height="unset"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          grow="1"
-          shrink="1"
-          basis="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          objectFit="contain"
-          src="https://securitymanagerimages.s3.amazonaws.com/image.png"
-          backgroundColor="black"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
       </Flex>
     </Flex>
   );

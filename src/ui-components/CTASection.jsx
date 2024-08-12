@@ -117,6 +117,7 @@ export default function CTASection(props) {
             isDisabled={false}
             labelHidden={true}
             variation="default"
+            color="white"
             {...getOverrideProps(overrides, "TextField")}
           ></TextField>
           <Button
@@ -124,7 +125,7 @@ export default function CTASection(props) {
             height="unset"
             border="1px SOLID rgba(0,0,0,1)"
             shrink="0"
-            backgroundColor="rgba(191,64,64,1)"
+            backgroundColor="rgba(0,136,235,1)"
             size="default"
             isDisabled={false}
             variation="primary"

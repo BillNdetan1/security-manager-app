@@ -6,16 +6,19 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
-import { Flex, Icon, Text, View } from "@aws-amplify/ui-react";
+import { getOverrideProps, useAuthSignOutAction } from "./utils";
+import { Button, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function NavBarHeader(props) {
   const { overrides, ...rest } = props;
+  const buttonThreeEightNineNineOneOneOneEightOnClick = useAuthSignOutAction({
+    global: false,
+  });
   return (
     <Flex
       gap="40px"
       direction="row"
-      width="1440px"
+      width="unset"
       height="unset"
       justifyContent="center"
       alignItems="center"
@@ -105,63 +108,18 @@ export default function NavBarHeader(props) {
           {...getOverrideProps(overrides, "Vector 2")}
         ></Icon>
       </View>
-      <Flex
-        gap="40px"
-        direction="row"
+      <Button
         width="unset"
         height="unset"
-        justifyContent="flex-start"
-        alignItems="center"
-        grow="1"
-        shrink="1"
-        basis="0"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767076")}
-      >
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(255,255,255,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Dashboard"
-          {...getOverrideProps(overrides, "Dashboard")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(255,255,255,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Company"
-          {...getOverrideProps(overrides, "Company")}
-        ></Text>
-      </Flex>
+        border="1px SOLID rgba(255,255,255,1)"
+        shrink="0"
+        size="default"
+        isDisabled={false}
+        variation="default"
+        color="white"
+        children="Dashboard"
+        {...getOverrideProps(overrides, "Button38981054")}
+      ></Button>
       <Flex
         gap="32px"
         direction="row"
@@ -174,7 +132,7 @@ export default function NavBarHeader(props) {
         basis="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767081")}
+        {...getOverrideProps(overrides, "Frame 321")}
       >
         <MyIcon
           width="24px"
@@ -191,6 +149,23 @@ export default function NavBarHeader(props) {
           {...getOverrideProps(overrides, "MyIcon")}
         ></MyIcon>
       </Flex>
+      <Button
+        width="unset"
+        height="unset"
+        border="1px SOLID rgba(255,255,255,1)"
+        padding="7px 15px 7px 15px"
+        shrink="0"
+        backgroundColor="rgba(0,0,0,1)"
+        size="default"
+        isDisabled={false}
+        variation="link"
+        color="white"
+        children="Log Out"
+        onClick={() => {
+          buttonThreeEightNineNineOneOneOneEightOnClick();
+        }}
+        {...getOverrideProps(overrides, "Button38991118")}
+      ></Button>
     </Flex>
   );
 }

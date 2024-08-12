@@ -15,7 +15,7 @@ export default function Features2x2(props) {
     <Flex
       gap="0"
       direction="column"
-      width="1440px"
+      width="unset"
       height="unset"
       justifyContent="center"
       alignItems="center"
@@ -33,7 +33,6 @@ export default function Features2x2(props) {
         justifyContent="flex-start"
         alignItems="flex-start"
         shrink="0"
-        alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 13629766592")}
@@ -41,12 +40,11 @@ export default function Features2x2(props) {
         <Flex
           gap="24px"
           direction="row"
-          width="unset"
+          width="1120px"
           height="unset"
           justifyContent="center"
           alignItems="center"
           shrink="0"
-          alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Frame 13629766593")}
@@ -139,10 +137,10 @@ export default function Features2x2(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Our threat detection features allows business owners to feel at ease knowing that the networks are secure from common threats."
+              children="Our threat detection features allows business owners to feel at ease, knowing that their networks are secure from common threats."
               {...getOverrideProps(
                 overrides,
-                "Our threat detection features allows business owners to feel at ease knowing that the networks are secure from common threats."
+                "Our threat detection features allows business owners to feel at ease, knowing that their networks are secure from common threats."
               )}
             ></Text>
           </Flex>
@@ -245,12 +243,11 @@ export default function Features2x2(props) {
         <Flex
           gap="24px"
           direction="row"
-          width="unset"
+          width="1120px"
           height="unset"
           justifyContent="center"
           alignItems="center"
           shrink="0"
-          alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
           backgroundColor="rgba(0,0,0,1)"
@@ -345,10 +342,10 @@ export default function Features2x2(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Creation of customizable risk registers to store and score past risks. Makes resolving reoccurring incidents seamless."
+              children="Customizable risk registers to store and score risks. &#xA;Makes resolving reoccurring incidents seamless."
               {...getOverrideProps(
                 overrides,
-                "Creation of customizable risk registers to store and score past risks. Makes resolving reoccurring incidents seamless."
+                "Customizable risk registers to store and score risks. Makes resolving reoccurring incidents seamless."
               )}
             ></Text>
           </Flex>
@@ -440,10 +437,10 @@ export default function Features2x2(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Access to state of the art training on best practices to keep your network secured and available."
+              children="Access to state of the art training on best practices to keep your network secured, and available."
               {...getOverrideProps(
                 overrides,
-                "Access to state of the art training on best practices to keep your network secured and available."
+                "Access to state of the art training on best practices to keep your network secured, and available."
               )}
             ></Text>
           </Flex>

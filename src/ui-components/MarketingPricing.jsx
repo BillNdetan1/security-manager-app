@@ -6,16 +6,24 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function MarketingPricing(props) {
   const { overrides, ...rest } = props;
+  const buttonTwoNineSevenSixSixSixEightSixOnClick = useNavigateAction({
+    type: "url",
+    url: "/premium",
+  });
+  const buttonThreeNineThreeNineThreeFourZeroEightOnClick = useNavigateAction({
+    type: "url",
+    url: "/premium",
+  });
   return (
     <Flex
       gap="24px"
       direction="column"
-      width="1440px"
+      width="unset"
       height="unset"
       justifyContent="flex-start"
       alignItems="center"
@@ -84,12 +92,11 @@ export default function MarketingPricing(props) {
       <Flex
         gap="24px"
         direction="row"
-        width="unset"
+        width="924px"
         height="unset"
         justifyContent="flex-start"
         alignItems="flex-start"
         shrink="0"
-        alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 63")}
@@ -98,12 +105,10 @@ export default function MarketingPricing(props) {
           gap="24px"
           direction="column"
           width="unset"
-          height="unset"
+          height="497px"
           justifyContent="center"
           alignItems="center"
-          grow="1"
-          shrink="1"
-          basis="0"
+          shrink="0"
           position="relative"
           boxShadow="0px 2px 4px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.05000000074505806)"
           borderRadius="8px"
@@ -324,14 +329,18 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            border="1px SOLID rgba(0,0,0,1)"
+            border="1px SOLID rgba(255,255,255,1)"
             shrink="0"
             alignSelf="stretch"
-            backgroundColor="rgba(29,202,14,1)"
+            boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+            backgroundColor="rgba(0,0,0,1)"
             size="large"
             isDisabled={false}
             variation="primary"
             children="Get started"
+            onClick={() => {
+              buttonTwoNineSevenSixSixSixEightSixOnClick();
+            }}
             {...getOverrideProps(overrides, "Button29766686")}
           ></Button>
         </Flex>
@@ -342,9 +351,7 @@ export default function MarketingPricing(props) {
           height="unset"
           justifyContent="center"
           alignItems="center"
-          grow="1"
-          shrink="1"
-          basis="0"
+          shrink="0"
           position="relative"
           boxShadow="0px 2px 4px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.05000000074505806)"
           borderRadius="8px"
@@ -382,8 +389,8 @@ export default function MarketingPricing(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Standard Plan"
-              {...getOverrideProps(overrides, "Standard Plan")}
+              children="DNA Plan"
+              {...getOverrideProps(overrides, "DNA Plan")}
             ></Text>
             <Text
               fontFamily="Inter"
@@ -425,7 +432,7 @@ export default function MarketingPricing(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Billed annually"
-              {...getOverrideProps(overrides, "Billed annually39393395")}
+              {...getOverrideProps(overrides, "Billed annually")}
             ></Text>
           </Flex>
           <Flex
@@ -576,7 +583,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13739393404")}
+            {...getOverrideProps(overrides, "Frame 137")}
           >
             <Flex
               gap="0"
@@ -638,323 +645,18 @@ export default function MarketingPricing(props) {
           <Button
             width="unset"
             height="unset"
-            border="1px SOLID rgba(0,0,0,1)"
+            border="1px SOLID rgba(255,255,255,1)"
             shrink="0"
             alignSelf="stretch"
-            backgroundColor="rgba(29,202,14,1)"
+            backgroundColor="rgba(0,0,0,1)"
             size="large"
             isDisabled={false}
             variation="primary"
             children="Get started"
+            onClick={() => {
+              buttonThreeNineThreeNineThreeFourZeroEightOnClick();
+            }}
             {...getOverrideProps(overrides, "Button39393408")}
-          ></Button>
-        </Flex>
-        <Flex
-          gap="24px"
-          direction="column"
-          width="unset"
-          height="unset"
-          justifyContent="center"
-          alignItems="center"
-          grow="1"
-          shrink="1"
-          basis="0"
-          position="relative"
-          boxShadow="0px 2px 4px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.05000000074505806)"
-          borderRadius="8px"
-          padding="32px 32px 32px 32px"
-          backgroundColor="rgba(0,0,0,1)"
-          {...getOverrideProps(overrides, "Frame 391")}
-        >
-          <Flex
-            gap="8px"
-            direction="column"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 42939393608")}
-          >
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="600"
-              color="rgba(255,255,255,1)"
-              lineHeight="30px"
-              textAlign="center"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="400px"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Premium Plan"
-              {...getOverrideProps(overrides, "Premium Plan")}
-            ></Text>
-            <Text
-              fontFamily="Inter"
-              fontSize="32px"
-              fontWeight="600"
-              color="rgba(255,255,255,1)"
-              lineHeight="25px"
-              textAlign="center"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="400px"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="$60/mo"
-              {...getOverrideProps(overrides, "$60/mo")}
-            ></Text>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="600"
-              color="rgba(255,255,255,1)"
-              lineHeight="25px"
-              textAlign="center"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="400px"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Billed annually"
-              {...getOverrideProps(overrides, "Billed annually39393611")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13839393612")}
-          >
-            <Flex
-              gap="0"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              shrink="0"
-              position="relative"
-              borderRadius="8px"
-              padding="8px 8px 8px 8px"
-              backgroundColor="rgba(255,255,255,1)"
-              {...getOverrideProps(overrides, "Frame 43039393613")}
-            >
-              <MyIcon
-                width="24px"
-                height="24px"
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                overflow="hidden"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393614")}
-              ></MyIcon>
-            </Flex>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(255,255,255,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              letterSpacing="0.01px"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Standard Features"
-              {...getOverrideProps(overrides, "Standard Features")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13939393616")}
-          >
-            <Flex
-              gap="0"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              shrink="0"
-              position="relative"
-              borderRadius="8px"
-              padding="8px 8px 8px 8px"
-              backgroundColor="rgba(255,255,255,1)"
-              {...getOverrideProps(overrides, "Frame 43139393617")}
-            >
-              <MyIcon
-                width="24px"
-                height="24px"
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                overflow="hidden"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393618")}
-              ></MyIcon>
-            </Flex>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(255,255,255,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              letterSpacing="0.01px"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Advanced Log Analytics"
-              {...getOverrideProps(overrides, "Advanced Log Analytics")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13739393620")}
-          >
-            <Flex
-              gap="0"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              shrink="0"
-              position="relative"
-              borderRadius="8px"
-              padding="8px 8px 8px 8px"
-              backgroundColor="rgba(255,255,255,1)"
-              {...getOverrideProps(overrides, "Frame 43039393621")}
-            >
-              <MyIcon
-                width="24px"
-                height="24px"
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                overflow="hidden"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393622")}
-              ></MyIcon>
-            </Flex>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(255,255,255,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              letterSpacing="0.01px"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Access to 24/hr Support Team"
-              {...getOverrideProps(overrides, "Access to 24/hr Support Team")}
-            ></Text>
-          </Flex>
-          <Button
-            width="unset"
-            height="unset"
-            border="1px SOLID rgba(0,0,0,1)"
-            shrink="0"
-            alignSelf="stretch"
-            backgroundColor="rgba(29,202,14,1)"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Get started"
-            {...getOverrideProps(overrides, "Button39393624")}
           ></Button>
         </Flex>
       </Flex>

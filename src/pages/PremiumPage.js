@@ -1,5 +1,8 @@
 import { Authenticator, View, Image, useTheme } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
+import {
+    NavBarHeader 
+   } from '../ui-components';
 
 const PremiumPage = () => {
     const components = {
@@ -21,14 +24,18 @@ const PremiumPage = () => {
        
 
         <Authenticator components={components}>
-            {({ signOut }) => (
-                <div>
-                    <h1>Welcome to your Security Manager</h1>
-                    <h3>Thank you for signing up!</h3>
-                    <button onClick={signOut}>Sign Out</button>
-                </div>
+            
+             <div className="container">
+                
+              
+                
+                <div className="component">
+                <NavBarHeader />
+              </div>
 
-            )}
+              </div>
+
+            
         </Authenticator>
 
 
