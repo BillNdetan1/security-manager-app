@@ -11,7 +11,7 @@ import {
   Features2x2 
  } from '../ui-components';
  import {
-  CTASection 
+  MarketingFooter 
  } from '../ui-components';
 
 const LandingPage = () => {
@@ -39,7 +39,7 @@ const LandingPage = () => {
      
       <div className="component">
        <div id="Contacts"></div>
-       < CTASection />
+       < MarketingFooter  />
       </div>
     
     </div>

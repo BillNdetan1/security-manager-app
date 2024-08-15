@@ -13,6 +13,7 @@ body, html {
   background-color: black; /* Ensure the entire background is black */
 }
 
+
 .container {
   background-color: black;
   min-height: 100vh; /* Ensure it covers the full viewport height */

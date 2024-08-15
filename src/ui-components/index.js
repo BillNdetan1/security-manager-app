@@ -5,12 +5,14 @@
  **************************************************************************/
 
 export { default as ActionCard } from "./ActionCard";
+export { default as AddDevice } from "./AddDevice";
 export { default as Ampligram } from "./Ampligram";
 export { default as CTASection } from "./CTASection";
 export { default as CheckoutPayment } from "./CheckoutPayment";
 export { default as CommentCard } from "./CommentCard";
 export { default as ContactUs } from "./ContactUs";
 export { default as DataRow } from "./DataRow";
+export { default as DeviceLogsUpdateForm } from "./DeviceLogsUpdateForm";
 export { default as EditProfile } from "./EditProfile";
 export { default as Features2x2 } from "./Features2x2";
 export { default as Filters } from "./Filters";

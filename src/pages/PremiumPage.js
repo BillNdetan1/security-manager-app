@@ -3,6 +3,9 @@ import '@aws-amplify/ui-react/styles.css';
 import {
     NavBarHeader 
    } from '../ui-components';
+import {
+    SideBar 
+   } from '../ui-components';
 
 const PremiumPage = () => {
     const components = {
@@ -27,10 +30,12 @@ const PremiumPage = () => {
             
              <div className="container">
                 
-              
-                
-                <div className="component">
+                 <div className="component">
                 <NavBarHeader />
+              </div>
+
+              <div className="component">
+                <SideBar />
               </div>
 
               </div>

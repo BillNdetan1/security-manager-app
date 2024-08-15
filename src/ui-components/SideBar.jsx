@@ -7,8 +7,8 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
+import { Button, Flex, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
-import { Flex, Text } from "@aws-amplify/ui-react";
 export default function SideBar(props) {
   const { overrides, ...rest } = props;
   return (
@@ -51,86 +51,10 @@ export default function SideBar(props) {
           basis="0"
           alignSelf="stretch"
           position="relative"
-          padding="0px 32px 0px 32px"
+          border="1px SOLID rgba(0,0,0,1)"
+          padding="0px 31px 0px 31px"
           {...getOverrideProps(overrides, "Frame 32139493356")}
         >
-          <Flex
-            gap="16px"
-            direction="column"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 414")}
-          >
-            <Flex
-              gap="8px"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="center"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 322")}
-            >
-              <Flex
-                gap="0"
-                direction="row"
-                width="unset"
-                height="unset"
-                justifyContent="flex-start"
-                alignItems="flex-start"
-                shrink="0"
-                position="relative"
-                borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493360")}
-              >
-                <MyIcon
-                  width="18px"
-                  height="18px"
-                  display="block"
-                  gap="unset"
-                  alignItems="unset"
-                  justifyContent="unset"
-                  overflow="hidden"
-                  shrink="0"
-                  position="relative"
-                  padding="0px 0px 0px 0px"
-                  type="home"
-                  {...getOverrideProps(overrides, "MyIcon39493361")}
-                ></MyIcon>
-              </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(4,125,149,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
-                width="unset"
-                height="unset"
-                gap="unset"
-                alignItems="unset"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
-                children="Home"
-                {...getOverrideProps(overrides, "label39493362")}
-              ></Text>
-            </Flex>
-          </Flex>
           <Flex
             gap="16px"
             direction="column"
@@ -147,7 +71,7 @@ export default function SideBar(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="600"
-              color="rgba(92,102,112,1)"
+              color="rgba(255,255,255,1)"
               lineHeight="24px"
               textAlign="left"
               display="block"
@@ -185,9 +109,10 @@ export default function SideBar(props) {
                 alignItems="flex-start"
                 shrink="0"
                 position="relative"
+                border="1px SOLID rgba(255,255,255,1)"
                 borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                padding="5px 5px 5px 5px"
+                backgroundColor="rgba(0,0,0,1)"
                 {...getOverrideProps(overrides, "icon39493366")}
               >
                 <MyIcon
@@ -205,156 +130,18 @@ export default function SideBar(props) {
                   {...getOverrideProps(overrides, "MyIcon39493367")}
                 ></MyIcon>
               </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(4,125,149,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
+              <Button
                 width="unset"
                 height="unset"
-                gap="unset"
-                alignItems="unset"
+                border="1px SOLID rgba(0,0,0,1)"
                 shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
+                size="default"
+                isDisabled={false}
+                variation="default"
+                color="white"
                 children="Content"
-                {...getOverrideProps(overrides, "label39493368")}
-              ></Text>
-            </Flex>
-            <Flex
-              gap="8px"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="center"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493369")}
-            >
-              <Flex
-                gap="0"
-                direction="row"
-                width="unset"
-                height="unset"
-                justifyContent="flex-start"
-                alignItems="flex-start"
-                shrink="0"
-                position="relative"
-                borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493370")}
-              >
-                <MyIcon
-                  width="18px"
-                  height="18px"
-                  display="block"
-                  gap="unset"
-                  alignItems="unset"
-                  justifyContent="unset"
-                  overflow="hidden"
-                  shrink="0"
-                  position="relative"
-                  padding="0px 0px 0px 0px"
-                  type="group"
-                  {...getOverrideProps(overrides, "MyIcon39493371")}
-                ></MyIcon>
-              </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(4,125,149,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
-                width="100px"
-                height="unset"
-                gap="unset"
-                alignItems="unset"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
-                children="Users"
-                {...getOverrideProps(overrides, "label39493372")}
-              ></Text>
-            </Flex>
-            <Flex
-              gap="8px"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="center"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493373")}
-            >
-              <Flex
-                gap="0"
-                direction="row"
-                width="unset"
-                height="unset"
-                justifyContent="flex-start"
-                alignItems="flex-start"
-                shrink="0"
-                position="relative"
-                borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493374")}
-              >
-                <MyIcon
-                  width="18px"
-                  height="18px"
-                  display="block"
-                  gap="unset"
-                  alignItems="unset"
-                  justifyContent="unset"
-                  overflow="hidden"
-                  shrink="0"
-                  position="relative"
-                  padding="0px 0px 0px 0px"
-                  type="file"
-                  {...getOverrideProps(overrides, "MyIcon39493375")}
-                ></MyIcon>
-              </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(4,125,149,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
-                width="unset"
-                height="unset"
-                gap="unset"
-                alignItems="unset"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
-                children="Files"
-                {...getOverrideProps(overrides, "label39493376")}
-              ></Text>
+                {...getOverrideProps(overrides, "Button39213863")}
+              ></Button>
             </Flex>
           </Flex>
           <Flex
@@ -373,7 +160,7 @@ export default function SideBar(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="600"
-              color="rgba(92,102,112,1)"
+              color="rgba(255,255,255,1)"
               lineHeight="24px"
               textAlign="left"
               display="block"
@@ -411,9 +198,10 @@ export default function SideBar(props) {
                 alignItems="flex-start"
                 shrink="0"
                 position="relative"
+                border="1px SOLID rgba(255,255,255,1)"
                 borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                padding="5px 5px 5px 5px"
+                backgroundColor="rgba(0,0,0,1)"
                 {...getOverrideProps(overrides, "icon39493380")}
               >
                 <MyIcon
@@ -431,156 +219,18 @@ export default function SideBar(props) {
                   {...getOverrideProps(overrides, "MyIcon39493381")}
                 ></MyIcon>
               </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(4,125,149,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
+              <Button
                 width="unset"
                 height="unset"
-                gap="unset"
-                alignItems="unset"
+                border="1px SOLID rgba(0,0,0,1)"
                 shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
-                children="Data"
-                {...getOverrideProps(overrides, "label39493382")}
-              ></Text>
-            </Flex>
-            <Flex
-              gap="8px"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="center"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493383")}
-            >
-              <Flex
-                gap="0"
-                direction="row"
-                width="unset"
-                height="unset"
-                justifyContent="flex-start"
-                alignItems="flex-start"
-                shrink="0"
-                position="relative"
-                borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493384")}
-              >
-                <MyIcon
-                  width="18px"
-                  height="18px"
-                  display="block"
-                  gap="unset"
-                  alignItems="unset"
-                  justifyContent="unset"
-                  overflow="hidden"
-                  shrink="0"
-                  position="relative"
-                  padding="0px 0px 0px 0px"
-                  type="storage"
-                  {...getOverrideProps(overrides, "MyIcon39493385")}
-                ></MyIcon>
-              </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(4,125,149,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
-                width="100px"
-                height="unset"
-                gap="unset"
-                alignItems="unset"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
-                children="Storage"
-                {...getOverrideProps(overrides, "label39493386")}
-              ></Text>
-            </Flex>
-            <Flex
-              gap="8px"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="center"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493387")}
-            >
-              <Flex
-                gap="0"
-                direction="row"
-                width="unset"
-                height="unset"
-                justifyContent="flex-start"
-                alignItems="flex-start"
-                shrink="0"
-                position="relative"
-                borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493388")}
-              >
-                <MyIcon
-                  width="18px"
-                  height="18px"
-                  display="block"
-                  gap="unset"
-                  alignItems="unset"
-                  justifyContent="unset"
-                  overflow="hidden"
-                  shrink="0"
-                  position="relative"
-                  padding="0px 0px 0px 0px"
-                  type="authentication"
-                  {...getOverrideProps(overrides, "MyIcon39493389")}
-                ></MyIcon>
-              </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(4,125,149,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
-                width="unset"
-                height="unset"
-                gap="unset"
-                alignItems="unset"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
-                children="Authentication"
-                {...getOverrideProps(overrides, "label39493390")}
-              ></Text>
+                size="default"
+                isDisabled={false}
+                variation="default"
+                color="white"
+                children="Add Device"
+                {...getOverrideProps(overrides, "Button39214138")}
+              ></Button>
             </Flex>
           </Flex>
         </Flex>

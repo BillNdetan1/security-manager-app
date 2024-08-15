@@ -1,0 +1,4 @@
+type DeviceLogs @model @auth(rules: [{allow: private}, {allow: owner, operations: [create, read, update]}]) {
+  id: ID!
+  timeStamp: AWSDateTime
+}
