@@ -81,7 +81,7 @@ export default function NavBarHeader2(props) {
           left="6px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="SMBS"
+          children="SMSB"
           {...getOverrideProps(overrides, "SMBS")}
         ></Text>
         <Icon

@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, ImageProps, PhoneNumberFieldProps, SelectFieldProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps, PhoneNumberFieldProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -22,22 +22,15 @@ export declare type FormCheckoutOverridesProps = {
     "Frame 41129767005"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 313"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 406"?: PrimitiveOverrideProps<FlexProps>;
-    "Shipping information"?: PrimitiveOverrideProps<TextProps>;
+    "Device Information"?: PrimitiveOverrideProps<TextProps>;
     "Frame 426"?: PrimitiveOverrideProps<FlexProps>;
     TextField29767009?: PrimitiveOverrideProps<TextFieldProps>;
     TextField29767010?: PrimitiveOverrideProps<TextFieldProps>;
-    "Frame 409"?: PrimitiveOverrideProps<FlexProps>;
-    TextField29767014?: PrimitiveOverrideProps<TextFieldProps>;
-    "Frame 425"?: PrimitiveOverrideProps<FlexProps>;
-    TextField29767015?: PrimitiveOverrideProps<TextFieldProps>;
-    TextField39343126?: PrimitiveOverrideProps<TextFieldProps>;
-    SelectField?: PrimitiveOverrideProps<SelectFieldProps>;
     "Frame 410"?: PrimitiveOverrideProps<FlexProps>;
     TextField39343134?: PrimitiveOverrideProps<TextFieldProps>;
     PhoneNumberField?: PrimitiveOverrideProps<PhoneNumberFieldProps>;
     "Frame 41139343187"?: PrimitiveOverrideProps<FlexProps>;
     Button?: PrimitiveOverrideProps<ButtonProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type FormCheckoutProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: FormCheckoutOverridesProps | undefined | null;

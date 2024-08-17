@@ -21,7 +21,7 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type NavBarHeaderOverridesProps = {
     NavBarHeader?: PrimitiveOverrideProps<FlexProps>;
     "Frame 4382"?: PrimitiveOverrideProps<ViewProps>;
-    SMBS?: PrimitiveOverrideProps<TextProps>;
+    SMSB?: PrimitiveOverrideProps<TextProps>;
     "Vector 1"?: PrimitiveOverrideProps<IconProps>;
     "Vector 2"?: PrimitiveOverrideProps<IconProps>;
     Button38981054?: PrimitiveOverrideProps<ButtonProps>;

@@ -10,9 +10,7 @@ import { getOverrideProps } from "./utils";
 import {
   Button,
   Flex,
-  Image,
   PhoneNumberField,
-  SelectField,
   Text,
   TextField,
 } from "@aws-amplify/ui-react";
@@ -43,7 +41,7 @@ export default function FormCheckout(props) {
         basis="0"
         position="relative"
         padding="32px 0px 32px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(0,0,0,1)"
         {...getOverrideProps(overrides, "Frame 41129767005")}
       >
         <Flex
@@ -77,7 +75,7 @@ export default function FormCheckout(props) {
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="600"
-              color="rgba(13,26,38,1)"
+              color="rgba(255,255,255,1)"
               lineHeight="20px"
               textAlign="left"
               display="block"
@@ -91,8 +89,8 @@ export default function FormCheckout(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Shipping information"
-              {...getOverrideProps(overrides, "Shipping information")}
+              children="Device Information"
+              {...getOverrideProps(overrides, "Device Information")}
             ></Text>
             <Flex
               gap="24px"
@@ -110,7 +108,7 @@ export default function FormCheckout(props) {
               <TextField
                 width="unset"
                 height="unset"
-                label="First name"
+                label="Device Name"
                 grow="1"
                 shrink="1"
                 basis="0"
@@ -124,7 +122,7 @@ export default function FormCheckout(props) {
               <TextField
                 width="unset"
                 height="unset"
-                label="Last name"
+                label="Device IP Address"
                 grow="1"
                 shrink="1"
                 basis="0"
@@ -148,93 +146,12 @@ export default function FormCheckout(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 32px 0px 32px"
-            {...getOverrideProps(overrides, "Frame 409")}
-          >
-            <TextField
-              width="unset"
-              height="unset"
-              label="Street address"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder=""
-              size="default"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField29767014")}
-            ></TextField>
-            <Flex
-              gap="24px"
-              direction="row"
-              width="unset"
-              height="unset"
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              shrink="0"
-              alignSelf="stretch"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 425")}
-            >
-              <TextField
-                width="unset"
-                height="unset"
-                label="City"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField29767015")}
-              ></TextField>
-              <TextField
-                width="unset"
-                height="unset"
-                label="Zip code"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField39343126")}
-              ></TextField>
-              <SelectField
-                width="100px"
-                height="unset"
-                label="State"
-                shrink="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "SelectField")}
-              ></SelectField>
-            </Flex>
-          </Flex>
-          <Flex
-            gap="24px"
-            direction="column"
-            width="unset"
-            height="unset"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Frame 410")}
           >
             <TextField
               width="unset"
               height="unset"
-              label="Email address"
+              label="Operating System"
               shrink="0"
               alignSelf="stretch"
               placeholder=""
@@ -284,22 +201,6 @@ export default function FormCheckout(props) {
             ></Button>
           </Flex>
         </Flex>
-        <Image
-          width="unset"
-          height="unset"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          grow="1"
-          shrink="1"
-          basis="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
       </Flex>
     </Flex>
   );
