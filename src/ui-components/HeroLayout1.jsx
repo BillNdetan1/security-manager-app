@@ -154,7 +154,7 @@ export default function HeroLayout1(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="SMBS is a dynamic web application designed to provide basic threat detection for small business networks."
+              children="SMSB is a dynamic web application designed to provide basic threat detection for small business networks."
               {...getOverrideProps(overrides, "Body")}
             ></Text>
           </Flex>
